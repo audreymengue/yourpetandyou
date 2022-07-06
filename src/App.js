@@ -1,3 +1,4 @@
+import Contact from "./compnents/Contact";
 import Navbar from "./compnents/Navbar";
 import Reviews from "./compnents/Reviews";
 import Service from "./compnents/Service";
@@ -7,6 +8,7 @@ function App() {
       <Navbar/>
       <Reviews/>
       <Service/>
+      <Contact/>
     </div>);
 }
 
