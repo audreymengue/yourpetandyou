@@ -4,12 +4,14 @@ import Reviews from "./compnents/Reviews";
 import Service from "./compnents/Service";
 
 function App() {
-  return ( <div>
-      <Navbar/>
-      <Reviews/>
-      <Service/>
-      <Contact/>
-    </div>);
+  return (
+    <div>
+      <Navbar />
+      <Reviews />
+      <Service />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;
