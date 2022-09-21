@@ -10,7 +10,7 @@ const memoriesSchema = new Schema({
     timestamps: true
 });
 
-const Memories = mongoose.model("User", memoriesSchema);
+const Memories = mongoose.model("Memories", memoriesSchema);
 
 module.exports = Memories;
 

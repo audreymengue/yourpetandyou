@@ -7,6 +7,12 @@ router.route("/").get((req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
+router.route("/:id").get((req, res) => {
+  Memories.findById(req.params.id)
+  .then((memory) => res.json(memory))
+  .catch((err) => res.status(400).json("Error: " + err))
+});
+
 router.route("/add").post((req, res) => {
   const username = req.body.username;
   const description = req.body.description;
@@ -19,6 +25,25 @@ router.route("/add").post((req, res) => {
     .then(() => res.json("Memory added :)"))
     .catch((err) => res.status(400).json("Error " + err));
 });
+
+router.route("/delete/:id").delete((req, res) => {
+  Memories.findByIdAndDelete(req.params.id)
+    .then(() => res.json("Memory deleted"))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
+router.route("/update/:id").post((req, res) => {
+  Memories.findById(req.params.id).then((memories) => {
+    memories.username = req.body.username;
+    memories.description = req.body.description;
+    memories.date = Date.parse(req.body.date);
+
+    memories
+    .save()
+    .then(() => res.json("Memory update"))
+    .catch((err) => res.status(400).json("Error: " + err))
+  })
+})
 
 
 module.exports = router;
