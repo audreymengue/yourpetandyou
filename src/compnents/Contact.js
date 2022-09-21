@@ -2,27 +2,27 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className=" bg-gray-200 mx-auto ">
-      <div className="container flex flex-wrap justify-center text-center mx-auto">
-        <div className="flex flex-col space-full justify-center p-8 md:flex-row text-white">
+    <section className=" bg-gray-200 mx-auto w-full ">
+      <div className="flex flex-wrap justify-center w-full">
+        <div className="flex flex-col md:flex-row md:space-x-10 justify-center p-8 w-full  text-white">
           <div className="flex flex-col text-center text-gray-600">
             <h2 className="font-bold text-4xl tracking-wide mb-2 text-center">
               Find us here
             </h2>
             <iframe
-              className="rounded-xl md:w-2xl"
+              className="rounded-xl md:w-96 "
               title="My unique map"
-              height="500px"
+              height="450px"
               frameborder="0"
               allowfullscreen
               src="//umap.openstreetmap.fr/en/map/untitled-map_784763?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"
             ></iframe>
           </div>
-          <div className="bg-white shadow-lg p-8 text-gray-600 rounded-md mt-2">
+          <div className="text-gray-600 rounded-md mb-2">
             <h2 className="font-bold text-4xl tracking-wide mb-2 text-center">
               Contact us
             </h2>
-            <form className="flex flex-col space-y-4 rounded-xl">
+            <form className="flex flex-col md:w-96 space-y-4 rounded-xl bg-white p-8">
               <div>
                 <label>Name</label>
                 <input
