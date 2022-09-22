@@ -1,7 +1,16 @@
 # yourpetandyou
-This is application is meant to create an online presence for a local business. 
-If you are a vet or manage a facility that takes care of pets, this is the right website.
+This is a fullstack web app (MERN Stack) meant to keep tracks of all souvenirs between a pet and their master.
+
+Masters will be able to post, retrieve, update and delete souvenir posts as they wish to.
 
 ## Tools
-This application uses React and Tailwindcss
-Consists of a home page, a servce section, a reviews section, a social section and a contact section.
+- Frontend
+    - JavaScript
+    - React 
+    - Tailwindcss
+- Backend
+    - NodeJs
+- Database
+    - Mongo DB
+- Version control
+    - Git
