@@ -1,13 +1,10 @@
-import Contact from "./compnents/Contact";
-import Navbar from "./compnents/Navbar";
-import Reviews from "./compnents/Reviews";
-import Service from "./compnents/Service";
-import Topnav from "./compnents/Topnav";
+import React from "react";
+import { Topnav, Navbar, Reviews, Service, Contact } from "./components/index";
 
 function App() {
   return (
     <div>
-      <Topnav />
+      {/* <Topnav /> */}
       <Navbar />
       <Reviews />
       <Service />
