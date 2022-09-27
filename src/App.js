@@ -1,16 +1,20 @@
 import React from "react";
-import { Topnav, Navbar, Reviews, Service, Contact } from "./components/index";
-import { Route, Routes } from "react-router-dom"
+import {Navbar, Footer} from "./components/index";
+import { Route, Routes } from "react-router-dom";
+import { Addmaster, Newsouvenirs, Allsouvenirs, Home } from "./pages/index";
 
 function App() {
   return (
-    <div>
-      {/* <Topnav /> */}
+    <>
       <Navbar />
-      {/* <Reviews />
-      <Service />
-      <Contact /> */}
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/allsouvenirs" element={<Allsouvenirs />} />
+        <Route path="/newsouvenirs" element={<Newsouvenirs />} />
+        <Route path="/addmaster" element={<Addmaster />} />
+      </Routes>
+      {/* <Footer/> */}
+    </>
   );
 }
 
